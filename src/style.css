@@ -1,1 +1,47 @@
-body {}
+/* Global Styling & Resets */
+
+:root {
+    /* Font Families */
+    --ff-common: "Righteous", sans-serif;
+
+    /* Font Sizes */
+    --fs-base: 1rem;
+    --fs-nav: 0.64rem;
+    --fs-small: 0.8rem;
+    --fs-x-small: 0.512rem;
+
+    --fs-x-large-heading: 3.052rem;
+    --fs-large-heading: 2.441rem;
+    --fs-h1: 1.953rem;
+    --fs-h2: 1.563rem;
+    --fs-h3: 1.25rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #475561;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
