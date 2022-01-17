@@ -1,28 +1,45 @@
 function loadHeader() {
-    const header = document.querySelector('header');
+    // Grab the content container in the DOM
+    const content = document.querySelector('#content');
+
+    // Create the header and nav bar
+    const header = document.createElement('header');
+    header.classList.add('header');
+    header.setAttribute('id', 'header');
 
     const headerText = document.createElement('h1');
-    headerText.textContent = 'Mariano\'s Pizza';
     headerText.classList.add('header-text');
+    headerText.textContent = 'Mariano\'s Pizza';
 
-    const headerNav = document.createElement('ul');
+    const headerNav = document.createElement('nav');
     headerNav.classList.add('header-nav');
 
+    const navBar = document.createElement('ul');
+    navBar.classList.add('nav-bar');
+
     const navHome = document.createElement('li');
+    navHome.setAttribute('class', 'nav-tab');
     navHome.setAttribute('id', 'home');
-    navHome.textContent = 'menu';
+    navHome.textContent = 'home';
+
     const navMenu = document.createElement('li');
+    navMenu.setAttribute('class', 'nav-tab');
     navMenu.setAttribute('id', 'menu');
     navMenu.textContent = 'menu';
+
     const navContact = document.createElement('li');
+    navContact.setAttribute('class', 'nav-tab');
     navContact.setAttribute('id', 'contact');
     navContact.textContent = 'contact';
 
-    headerNav.appendChild(navHome);
-    headerNav.appendChild(navMenu);
-    headerNav.appendChild(navContact);
+    // Build the DOM
+    navBar.appendChild(navHome);
+    navBar.appendChild(navMenu);
+    navBar.appendChild(navContact);
+    headerNav.appendChild(navBar);
     header.appendChild(headerText);
     header.appendChild(headerNav);
+    content.appendChild(header);
 }
 
 export {loadHeader};
