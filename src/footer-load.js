@@ -1,6 +1,6 @@
 function loadFooter() {
     // Grab the content container in the DOM
-    const content = document.querySelector('content');
+    const content = document.querySelector('.content');
 
     // Create the footer
     const footer = document.createElement('footer');
