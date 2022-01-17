@@ -1,6 +1,6 @@
 function loadHeader() {
     // Grab the content container in the DOM
-    const content = document.querySelector('.content');
+    const content = document.querySelector('#content');
 
     // Create the header and nav bar
     const header = document.createElement('header');
@@ -11,8 +11,11 @@ function loadHeader() {
     headerText.classList.add('header-text');
     headerText.textContent = 'Mariano\'s Pizza';
 
+    const headerNav = document.createElement('nav');
+    headerNav.classList.add('header-nav');
+
     const navBar = document.createElement('ul');
-    navBar.classList.add('header-nav');
+    navBar.classList.add('nav-bar');
 
     const navHome = document.createElement('li');
     navHome.setAttribute('class', 'nav-tab');
@@ -33,8 +36,9 @@ function loadHeader() {
     navBar.appendChild(navHome);
     navBar.appendChild(navMenu);
     navBar.appendChild(navContact);
+    headerNav.appendChild(navBar);
     header.appendChild(headerText);
-    header.appendChild(navBar);
+    header.appendChild(headerNav);
     content.appendChild(header);
 }
 

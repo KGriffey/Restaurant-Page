@@ -1,6 +1,6 @@
 function loadFooter() {
     // Grab the content container in the DOM
-    const content = document.querySelector('.content');
+    const content = document.querySelector('#content');
 
     // Create the footer
     const footer = document.createElement('footer');
@@ -9,7 +9,7 @@ function loadFooter() {
 
     const footerText = document.createElement('p');
     footerText.classList.add('footer-text');
-    footerText.textContent = 'Copyright &copy 2022 Kyle Griffey';
+    footerText.textContent = 'Copyright \u00A9 2022 Kyle Griffey';
 
     // Append the footer to the DOM
     footer.appendChild(footerText);

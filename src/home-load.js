@@ -6,8 +6,7 @@ function loadHomePage() {
     loadHeader();
 
     // Grab the content container in the DOM
-    const content = document.querySelector('content');
-    content.innerHTML = 'test';
+    const content = document.querySelector('#content');
 
     // Load the footer
     loadFooter();
