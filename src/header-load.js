@@ -1,6 +1,6 @@
 function loadHeader() {
     // Grab the content container in the DOM
-    const content = document.querySelector('content');
+    const content = document.querySelector('.content');
 
     // Create the header and nav bar
     const header = document.createElement('header');
