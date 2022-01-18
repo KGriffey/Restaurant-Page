@@ -1,6 +1,6 @@
 import {loadHeader} from './header-load';
 import {loadFooter} from './footer-load';
-import Image from './images/pizza-chef.jpg';
+import PizzaChef from './images/pizza-chef.jpg';
 
 function loadHomePage() {
     // Load the header
@@ -13,11 +13,15 @@ function loadHomePage() {
     main.classList.add('main');
     main.setAttribute('id', 'main');
 
+    const intro = document.createElement('div');
+    intro.classList.add('introduction');
+
     const headline = document.createElement('p');
+    headline.classList.add('headline');
     headline.textContent = 'Not your Nonno\'s pizza!'
 
     const image = document.createElement('img');
-    image.src = Image;
+    image.src = PizzaChef;
     image.alt = 'Pizza Chef';
 
     const quote = document.createElement('div');
@@ -29,9 +33,10 @@ function loadHomePage() {
 
     quote.appendChild(quoteText);
     quote.appendChild(quoteName);
-    main.appendChild(headline);
-    main.appendChild(image);
-    main.appendChild(quote);
+    intro.appendChild(headline);
+    intro.appendChild(image);
+    intro.appendChild(quote);
+    main.appendChild(intro);
     content.appendChild(main);
 
     // Load the footer

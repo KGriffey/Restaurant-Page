@@ -7,7 +7,7 @@ function loadFooter() {
     footer.classList.add('footer');
     footer.setAttribute('id', 'footer');
 
-    const footerText = document.createElement('p');
+    const footerText = document.createElement('span');
     footerText.classList.add('footer-text');
     footerText.textContent = 'Copyright \u00A9 2022 Kyle Griffey';
 
