@@ -1,0 +1,32 @@
+[
+    {
+        "category": "entree",
+        "name": "pizza",
+        "description": "A most delicious over-fired pizza. Built to order."
+    },
+    {
+        "category": "entree",
+        "name": "pasta",
+        "description": "Scrumptious pasta with red sauce."
+    },
+    {
+        "category": "drink",
+        "name": "espresso",
+        "description": "A hot double shot of espresso."
+    },
+    {
+        "category": "drink",
+        "name": "wine",
+        "description": "The finest vintage of Napa Valley wine."
+    },
+    {
+        "category": "dessert",
+        "name": "tiramisu",
+        "description": "It's a tiramisu. Enough said."
+    },
+    {
+        "category": "dessert",
+        "name": "cannoli",
+        "description": "Some cannoli."
+    },
+]
