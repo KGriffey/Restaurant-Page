@@ -30,7 +30,6 @@ function loadMenuPage() {
     const drinks = document.createElement('div');
     drinks.classList.add('menu');
     drinks.setAttribute('id', 'drink-menu');
-    drinks.textContent = 'drinks';
     const drinksLabel = document.createElement('span');
     drinksLabel.classList.add('menu-label');
     drinksLabel.textContent = 'drinks';
@@ -39,7 +38,6 @@ function loadMenuPage() {
     const desserts = document.createElement('div');
     desserts.classList.add('menu');
     desserts.setAttribute('id', 'dessert-menu');
-    desserts.textContent = 'desserts';
     const dessertsLabel = document.createElement('span');
     dessertsLabel.classList.add('menu-label');
     dessertsLabel.textContent = 'desserts';

@@ -1,3 +1,5 @@
+import {changeTab} from './nav';
+
 function loadHeader() {
     // Grab the content container in the DOM
     const content = document.querySelector('#content');
@@ -21,16 +23,19 @@ function loadHeader() {
     navHome.setAttribute('class', 'nav-tab');
     navHome.setAttribute('id', 'home');
     navHome.textContent = 'home';
+    navHome.addEventListener('click', changeTab);
 
     const navMenu = document.createElement('li');
     navMenu.setAttribute('class', 'nav-tab');
     navMenu.setAttribute('id', 'menu');
     navMenu.textContent = 'menu';
+    navMenu.addEventListener('click', changeTab);
 
     const navContact = document.createElement('li');
     navContact.setAttribute('class', 'nav-tab');
     navContact.setAttribute('id', 'contact');
     navContact.textContent = 'contact';
+    navContact.addEventListener('click', changeTab);
 
     // Build the DOM
     navBar.appendChild(navHome);
