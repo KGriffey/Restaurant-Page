@@ -14,6 +14,10 @@ function loadMenuPage() {
     main.classList.add('main');
     main.setAttribute('id', 'main');
 
+    const container = document.createElement('div');
+    container.classList.add('container');
+    container.setAttribute('id', 'menu');
+
     const entrees = document.createElement('div');
     entrees.classList.add('menu');
     entrees.setAttribute('id', 'entree-menu');
@@ -66,9 +70,10 @@ function loadMenuPage() {
         }
     }
 
-    main.appendChild(entrees);
-    main.appendChild(drinks);
-    main.appendChild(desserts);
+    container.appendChild(entrees);
+    container.appendChild(drinks);
+    container.appendChild(desserts);
+    main.appendChild(container);
     content.appendChild(main);
 }
 

@@ -6,8 +6,9 @@ function loadContactPage() {
     main.classList.add('main');
     main.setAttribute('id', 'main');
 
-    const contact = document.createElement('div');
-    contact.classList.add('contact-info');
+    const container = document.createElement('div');
+    container.classList.add('container');
+    container.setAttribute('id', 'contact');
 
     const address = document.createElement('p');
     address.classList.add('address');
@@ -21,10 +22,10 @@ function loadContactPage() {
     email.classList.add('email');
     email.textContent = 'Email:' + '\r\n' + 'real.email@gmail.com';
     
-    contact.appendChild(address);
-    contact.appendChild(phoneNumber);
-    contact.appendChild(email);
-    main.appendChild(contact);
+    container.appendChild(address);
+    container.appendChild(phoneNumber);
+    container.appendChild(email);
+    main.appendChild(container);
     content.appendChild(main);
 }
 

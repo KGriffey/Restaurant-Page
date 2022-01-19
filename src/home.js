@@ -8,8 +8,9 @@ function loadHomePage() {
     main.classList.add('main');
     main.setAttribute('id', 'main');
 
-    const intro = document.createElement('div');
-    intro.classList.add('introduction');
+    const container = document.createElement('div');
+    container.classList.add('container');
+    container.setAttribute('id', 'home');
 
     const headline = document.createElement('p');
     headline.classList.add('headline');
@@ -28,10 +29,10 @@ function loadHomePage() {
 
     quote.appendChild(quoteText);
     quote.appendChild(quoteName);
-    intro.appendChild(headline);
-    intro.appendChild(image);
-    intro.appendChild(quote);
-    main.appendChild(intro);
+    container.appendChild(headline);
+    container.appendChild(image);
+    container.appendChild(quote);
+    main.appendChild(container);
     content.appendChild(main);
 }
 
