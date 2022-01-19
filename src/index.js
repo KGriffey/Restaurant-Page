@@ -1,4 +1,4 @@
 import './style.css';
-import {loadHomePage} from './home-load';
+import {loadInit} from './nav';
 
-loadHomePage();
+loadInit();

@@ -49,3 +49,10 @@ ul {
 img {
     max-width: 200px;
 }
+
+.address,
+.phone,
+.email {
+    text-align: center;
+    white-space: pre;
+}

@@ -1,5 +1,3 @@
-import {loadHeader} from './header-load';
-import {loadFooter} from './footer-load';
 import menuData from './menu.json5';
 import pizza from './images/pizza.jpg';
 import pasta from './images/pasta.jpg';
@@ -9,9 +7,6 @@ import cannoli from './images/cannoli.jpg';
 import tiramisu from './images/tiramisu.jpg';
 
 function loadMenuPage() {
-    // Load the header
-    loadHeader();
-
     // Grab the content container in the DOM
     const content = document.querySelector('#content');
     
@@ -75,9 +70,6 @@ function loadMenuPage() {
     main.appendChild(drinks);
     main.appendChild(desserts);
     content.appendChild(main);
-   
-    // Load the footer
-    loadFooter();
 }
 
 export {loadMenuPage};

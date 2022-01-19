@@ -1,11 +1,6 @@
-import {loadHeader} from './header-load';
-import {loadFooter} from './footer-load';
 import PizzaChef from './images/pizza-chef.jpg';
 
 function loadHomePage() {
-    // Load the header
-    loadHeader();
-
     // Grab the content container in the DOM
     const content = document.querySelector('#content');
     
@@ -38,9 +33,6 @@ function loadHomePage() {
     intro.appendChild(quote);
     main.appendChild(intro);
     content.appendChild(main);
-
-    // Load the footer
-    loadFooter();
 }
 
 export {loadHomePage};

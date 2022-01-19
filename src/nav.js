@@ -1,23 +1,29 @@
-import {loadHomePage} from './home-load';
-import {loadMenuPage} from './menu-load';
-import {loadContactPage} from './contact-load';
+import {loadHeader} from './header';
+import {loadFooter} from './footer';
+import {loadHomePage} from './home';
+import {loadMenuPage} from './menu';
+import {loadContactPage} from './contact';
+import {clearPage} from './util';
 
 function changeTab(e) {
     clearPage();
+    loadHeader();
+
     if (e.target.id === 'home') {
         loadHomePage();
     } else if (e.target.id === 'menu') {
         loadMenuPage();
     } else {
-        // loadContactPage();
+        loadContactPage();
     }
+
+    loadFooter();
 }
 
-function clearPage() {
-    const content = document.querySelector('#content');
-    while(content.lastElementChild) {
-        content.removeChild(content.lastElementChild);
-    }
+function loadInit() {
+    loadHeader();
+    loadHomePage();
+    loadFooter();
 }
 
-export {changeTab}
+export {changeTab, loadInit}
