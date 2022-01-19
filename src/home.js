@@ -22,9 +22,9 @@ function loadHomePage() {
     const quote = document.createElement('div');
     quote.classList.add('quote');
     const quoteText = document.createElement('p');
-    quoteText.textContent = 'A great time for the whole family. The food and drinks are delicious. Better than Marino\'s by a mile!';
+    quoteText.textContent = '"A great time for the whole family. The food and drinks are delicious. Better than Marino\'s by a mile!"';
     const quoteName = document.createElement('span');
-    quoteName.textContent = 'Kyle';
+    quoteName.textContent = '- Kyle';
 
     quote.appendChild(quoteText);
     quote.appendChild(quoteName);

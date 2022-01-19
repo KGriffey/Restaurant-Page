@@ -17,7 +17,7 @@ function loadMenuPage() {
     const entrees = document.createElement('div');
     entrees.classList.add('menu');
     entrees.setAttribute('id', 'entree-menu');
-    const entreesLabel = document.createElement('span');
+    const entreesLabel = document.createElement('h2');
     entreesLabel.classList.add('menu-label');
     entreesLabel.textContent = 'entrees';
     entrees.appendChild(entreesLabel);
@@ -25,7 +25,7 @@ function loadMenuPage() {
     const drinks = document.createElement('div');
     drinks.classList.add('menu');
     drinks.setAttribute('id', 'drink-menu');
-    const drinksLabel = document.createElement('span');
+    const drinksLabel = document.createElement('h2');
     drinksLabel.classList.add('menu-label');
     drinksLabel.textContent = 'drinks';
     drinks.appendChild(drinksLabel);
@@ -33,7 +33,7 @@ function loadMenuPage() {
     const desserts = document.createElement('div');
     desserts.classList.add('menu');
     desserts.setAttribute('id', 'dessert-menu');
-    const dessertsLabel = document.createElement('span');
+    const dessertsLabel = document.createElement('h2');
     dessertsLabel.classList.add('menu-label');
     dessertsLabel.textContent = 'desserts';
     desserts.appendChild(dessertsLabel);
@@ -43,7 +43,7 @@ function loadMenuPage() {
     for (let i = 0; i < menuData.length; i++) {
         const menuItem = document.createElement('div');
         menuItem.classList.add('menu-item');
-        const menuItemName = document.createElement('span');
+        const menuItemName = document.createElement('h3');
         menuItemName.classList.add('item-name');
         menuItemName.textContent = menuData[i].name;
         const menuItemDesc = document.createElement('p');
